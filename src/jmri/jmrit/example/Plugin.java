@@ -4,9 +4,6 @@ import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 import javax.swing.JMenu;
 
-// import jmri.jmrit.Menus;
-// import jmri.util.ThreadingUtil;
-
 /**
  * Definition of this plugin
  *
@@ -22,9 +19,13 @@ public class Plugin implements jmri.Plugin {
 
     @Override
     public void addToolsMenu(Object menu) {
-        JMenu m = (JMenu)menu;
-        m.addSeparator();
-        m.add(new PluginAction());
+        if (menu instanceof JMenu) {
+            JMenu m = (JMenu)menu;
+            m.addSeparator();
+            m.add(new PluginAction());
+        } else {
+            throw new IllegalArgumentException("menu is not a JMenu");
+        }
     }
 
     private static class PluginAction extends AbstractAction {
