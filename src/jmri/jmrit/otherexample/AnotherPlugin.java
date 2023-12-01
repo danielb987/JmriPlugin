@@ -21,9 +21,10 @@ public class AnotherPlugin implements jmri.Plugin {
     }
 
     @Override
-    public void addToolsMenu(JMenu menu) {
-        menu.addSeparator();
-        menu.add(new PluginAction());
+    public void addToolsMenu(Object menu) {
+        JMenu m = (JMenu)menu;
+        m.addSeparator();
+        m.add(new PluginAction());
     }
 
     private static class PluginAction extends AbstractAction {
