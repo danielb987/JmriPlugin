@@ -1,4 +1,4 @@
-package jmri.jmrit.example;
+package se.bergqvist.jmri.example;
 
 import java.util.ArrayList;
 import java.util.List;
