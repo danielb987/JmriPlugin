@@ -94,6 +94,11 @@ public class ToolsMenuItem extends JmriAbstractAction implements ToolsMenuAction
             return menuList;
         }
 
+        @Override
+        public String getHelpTarget() {
+            return "plugin:se.bergqvist.jmri.example.ToolsMenuItem";
+        }
+
     }
 
 }
