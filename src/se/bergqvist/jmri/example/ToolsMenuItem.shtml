@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JMRI: ToolsMenuItem Documentation</title>
+  <meta name="author" content="Daniel Bergqvist">
+  <meta name="keywords" content="java model railroad JMRI">
+  <!--#include virtual="/help/en/parts/Style.shtml" -->
+</head>
+<body>
+    <h2>Example help page for the ToolsMenuItem class</h2>
+    This is an example text.
+</body>
+</html>
+

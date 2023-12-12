@@ -1,4 +1,4 @@
-package jmri.jmrit.example;
+package se.bergqvist.jmri.example;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -92,6 +92,11 @@ public class ToolsMenuItem extends JmriAbstractAction implements ToolsMenuAction
         public List<JMenu> getMenus() {
             List<JMenu> menuList = new ArrayList<>();
             return menuList;
+        }
+
+        @Override
+        public String getHelpTarget() {
+            return "plugin:se.bergqvist.jmri.example.ToolsMenuItem";
         }
 
     }

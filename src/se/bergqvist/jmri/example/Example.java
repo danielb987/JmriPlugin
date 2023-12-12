@@ -1,4 +1,4 @@
-package jmri.jmrit.example;
+package se.bergqvist.jmri.example;
 
 import javax.swing.JOptionPane;
 
